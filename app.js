@@ -2,7 +2,6 @@ var express = require('express');
 var path = require('path');
 var logger = require('morgan');
 var index = require('./routes/index');
-const flash = require("express-flash");
 var app = express();
 
 
