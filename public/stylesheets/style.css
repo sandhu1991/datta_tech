@@ -1,0 +1,176 @@
+.bg-3 { 
+      background-color: #ffffff;
+      color: #555555;
+  }
+  .container-fluid {
+      padding-top: 60px;
+      padding-bottom: 50px;
+      background-color: aliceblue;
+  }
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+
+  .active>a {
+    color: #1abc9c !important;;
+  }
+
+  .about-img {
+    width: 100%;
+    height: auto;
+    padding-top: 25px;
+  }
+
+  /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 100%;
+  }
+
+  label{
+      float: left;
+  }
+
+  .contact-us{
+      padding-bottom: 50px;
+  }
+
+  .content{
+    float: right;
+    padding-top: 10px;
+  }
+
+  .content-icon{
+    padding-top: 10px;
+  }
+
+  .font-icon{
+      color: #fe865d;
+      float: right;
+  }
+
+  .first{
+    padding-left: 0px;
+  }
+
+  .footer-img{
+    width: 100%;
+    height: auto;
+    padding: 50px;
+  }
+
+  .footer{
+      background-color:#b9dfe0;
+      margin-top: 40px;
+  }
+  .footer-li{
+      color: black;
+  }
+
+  .text{
+    font-size: 15px;
+    color: white;
+  }
+
+  .footer-font{
+      font-size: 15px;
+  }
+
+  .contact-text{
+    font-size: 17px;
+    margin-left: -54px;
+  }
+
+  .home-img{
+    width: 100%;
+    padding: 40px;
+  }
+
+  .home-heading{
+    color: #b18282;
+    float: left;
+  }
+
+  .box1 {
+    display: block;
+    padding: 10px;
+    margin-bottom: 100px; /* SIMPLY SET THIS PROPERTY AS MUCH AS YOU WANT. This changes the space below box1 */
+    text-align: justify;
+}
+
+.box2 {
+    display: block;
+    padding: 10px;
+    text-align: justify;
+    margin-top: 100px; /* OR ADD THIS LINE AND SET YOUR PROPER SPACE as the space above box2 */
+}
+  hr{
+    border-top: 2px solid #b18282 ;
+    width: 100%;
+  }
+  .it-row{
+    padding-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .about-mainimg{
+    height: 600px;
+    width: 90%;
+    margin-bottom: 40px;;
+  }
+
+  .about-text{
+   text-align: left;
+   padding: 40px;
+   font-size: 20px;
+  }
+
+  .inner-divs{
+    background-color: antiquewhite;
+    margin: 2px;
+    height: 450px;
+
+  }
+  .inner-div{
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 388px;
+  }
