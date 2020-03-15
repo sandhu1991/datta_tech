@@ -6,21 +6,26 @@
     "start": "node ./bin/www",
     "start:dev": "nodemon --watch"
   },
-  "keywords": ["datta-tech-consulting", "ottawa", "datta"],
+  "keywords": [
+    "datta-tech-consulting",
+    "ottawa",
+    "datta"
+  ],
   "author": "hardilpreet",
   "dependencies": {
-    "constantinople": ">=3.1.1",
     "body-parser": "^1.19.0",
+    "clean-css": ">=4.1.11",
+    "constantinople": ">=3.1.1",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.3",
     "ejs": "2.5.7",
     "express": "^4.17.1",
     "express-layout": "^0.1.0",
     "express-session": "^1.17.0",
-    "pug": "~2.0.4",
     "morgan": "^1.9.1",
-    "serve-favicon": "~2.4.2",
-    "clean-css": ">=4.1.11"
+    "nodemailer": "^6.4.5",
+    "pug": "~2.0.4",
+    "serve-favicon": "~2.4.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
