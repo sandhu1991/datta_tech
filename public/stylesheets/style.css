@@ -3,21 +3,21 @@
       color: #555555;
   }
   .container-fluid {
-      padding-top: 60px;
-      padding-bottom: 50px;
+      padding-right: 0px;
       background-color: aliceblue;
   }
   .navbar {
       padding-top: 15px;
-      padding-bottom: 15px;
+      padding-bottom: 30px;
       border: 0;
       border-radius: 0;
       margin-bottom: 0;
       font-size: 12px;
       letter-spacing: 5px;
+      background-color:#292929;
   }
   .navbar-nav  li a:hover {
-      color: #1abc9c !important;
+      color: #292929 !important;
   }
 
   .active>a {
@@ -60,8 +60,8 @@ input[type=text], select, textarea {
   /* Add a background color and some padding around the form */
   .container {
     border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
+    background-color:#292929;
+    padding: 30px;
     width: 100%;
   }
 
@@ -98,8 +98,7 @@ input[type=text], select, textarea {
   }
 
   .footer{
-      background-color:#b9dfe0;
-      margin-top: 40px;
+      background-color:#292929;
   }
   .footer-li{
       color: black;
@@ -112,6 +111,7 @@ input[type=text], select, textarea {
 
   .footer-font{
       font-size: 15px;
+      color: white;
   }
 
   .contact-text{
@@ -152,14 +152,13 @@ input[type=text], select, textarea {
   }
 
   .about-mainimg{
-    height: 600px;
-    width: 90%;
+    height: 450px;
+    width:100%;
     margin-bottom: 40px;;
   }
 
   .about-text{
    text-align: left;
-   padding: 40px;
    font-size: 20px;
   }
 
@@ -177,12 +176,141 @@ input[type=text], select, textarea {
   .main-page-text{
     font-size: 25px;
     margin: 40px;
-    padding: 40px;
     text-align: center;
   }
-
   .indus-text{
     text-align: left;
     margin-top: 12px;
     font-size: 18px;
   }
+
+  /* login form  */
+
+  .login-form {
+    width: 300px;
+    margin: 0 auto;
+    font-family: Tahoma, Geneva, sans-serif;
+  }
+  .login-form h1 {
+    text-align: center;
+    color: #4d4d4d;
+    font-size: 24px;
+    padding: 20px 0 20px 0;
+  }
+  .login-form input[type="password"],
+  .login-form input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #dddddd;
+    margin-bottom: 15px;
+    box-sizing:border-box;
+  }
+  .login-form input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #535b63;
+    border: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  .intro-text{
+    color: #e0cbcb;
+    font-size: 25px;;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}

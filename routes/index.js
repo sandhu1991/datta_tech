@@ -30,10 +30,10 @@ router.get('/contact', function(req, res, next) {
 
 router.post('/submit', function(req, res, next) {
   var transporter = nodemailer.createTransport({
-    service: 'gmail',
+    service: 'outlook',
     auth: {
-      user: 'dattatec_support@gmail.com',
-      pass: 'xxxxxxx'
+      user: 'dattatech12@outlook.com',
+      pass: 'Support12@'
     }
   });
 
@@ -42,8 +42,8 @@ router.post('/submit', function(req, res, next) {
       subject+= 'Msg :' + req.body.Message;
   
   var mailOptions = {
-    from: 'dattatec_support@gmail.com',
-    to: 'info@dattatechconsulting.com',
+    from: 'dattatech12@outlook.com',
+    to: 'dattatechconsulting@gmail.com',
     subject: req.body.subject,
     text: subject
   };
@@ -60,6 +60,14 @@ router.post('/submit', function(req, res, next) {
 
 router.get('/jobs', function(req, res, next) {
   res.render('jobs', {page:'Jobs ', menuId:'job', response:"sucess", msg: "THERE ARE CURRENTLY NO VACANCIES AVAILABLE :)"});
+});
+
+router.get('/login', function(re, res, next){
+  res.render('login', {page:'Login', menuId:'login'});
+});
+
+router.post('/login', function(req, res, next){
+ 
 });
 
 module.exports = router;
