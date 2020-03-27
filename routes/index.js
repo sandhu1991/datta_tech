@@ -43,8 +43,8 @@ router.post('/submit', function(req, res, next) {
   
   var mailOptions = {
     from: 'dattatech12@outlook.com',
-    to: 'sandhu.hardilpreet@gmail.com',
-    // to: 'info@dattatechconsulting.com',
+    //to: 'sandhu.hardilpreet@gmail.com',
+     to: 'info@dattatechconsulting.com',
     subject: req.body.subject,
     text: content
   };
