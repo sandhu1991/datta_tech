@@ -30,22 +30,23 @@ router.get('/contact', function(req, res, next) {
 
 router.post('/submit', function(req, res, next) {
   var transporter = nodemailer.createTransport({
-    service: 'outlook',
+    service: 'gmail',
     auth: {
-      user: 'dattatech12@outlook.com',
-      pass: 'Support12@'
+      user: 'dattatechconsulting@gmail.com',
+      pass: 'Datta@123'
     }
   });
 
-  var subject = 'Name: '+ req.body.lastname+', '+ req.body.firstname + '\n';
-      subject+= 'Phone: ' + req.body.phone + '\n' + 'Email: ' + req.body.email + '\n';
-      subject+= 'Msg :' + req.body.Message;
+  var content = 'Name: '+ req.body.lastname+', '+ req.body.firstname + '\n';
+    content+= 'Phone: ' + req.body.phone + '\n' + 'Email: ' + req.body.email + '\n';
+    content+= 'Msg :' + req.body.text;
   
   var mailOptions = {
     from: 'dattatech12@outlook.com',
-    to: 'dattatechconsulting@gmail.com',
+    to: 'sandhu.hardilpreet@gmail.com',
+    // to: 'info@dattatechconsulting.com',
     subject: req.body.subject,
-    text: subject
+    text: content
   };
   
   transporter.sendMail(mailOptions, function(error, info){
