@@ -26,7 +26,8 @@
     "mysql": "^2.18.1",
     "nodemailer": "^6.4.5",
     "pug": "~2.0.4",
-    "serve-favicon": "~2.4.2"
+    "serve-favicon": "~2.4.2",
+    "waypoints": "^4.0.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"

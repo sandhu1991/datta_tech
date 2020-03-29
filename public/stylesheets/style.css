@@ -151,10 +151,11 @@ input[type=text], select, textarea {
   .it-row{
     padding-top: 40px;
     margin-bottom: 40px;
+    margin-left: 35px;
   }
 
   .about-mainimg{
-    height: 500px;
+    height: 700px;
     width:100%;
     margin-bottom: 40px;;
   }
@@ -162,12 +163,15 @@ input[type=text], select, textarea {
   .about-text{
    text-align: left;
    font-size: 20px;
+   padding-top: 20px;
+   padding-bottom: 20px;
   }
 
   .inner-divs{
-    background-color: antiquewhite;
+    background-color: white;
     margin: 2px;
-    height: 450px;
+    height: 500px;
+    padding: 50px;
 
   }
   .inner-div{
@@ -360,4 +364,217 @@ input[type=text], select, textarea {
   color: white;
 }
 
-.fa {font-size:50px;}
+.fa {
+  font-size:50px;
+}
+
+.mySlides {
+  display: none;
+}
+
+
+/* #showMe {
+  animation: cssAnimation 0s 1s forwards;
+  visibility: hidden;
+}
+
+@keyframes cssAnimation {
+  to   { visibility: visible; }
+} */
+
+#showMe {
+  animation: fadein 3s;
+  -moz-animation: fadein 6s; /* Firefox */
+  -webkit-animation: fadein 6s; /* Safari and Chrome */
+  -o-animation: fadein 6s; /* Opera */
+}
+@keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:3;
+  }
+}
+@-moz-keyframes fadein { /* Firefox */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:3;
+  }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:3;
+  }
+}
+@-o-keyframes fadein { /* Opera */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+div.slide-right {
+  width:100%;
+  overflow:hidden;
+}
+div.slide-right b{
+  animation: 3s slide-right;
+}
+
+div.slide-left {
+  width:100%;
+  overflow:hidden;
+}
+div.slide-left b{
+  animation: 3s slide-left;
+}
+
+.move-right {
+  /* width:100%; */
+  overflow:hidden;
+}
+.move-right{
+  animation: 3s slide-right;
+}
+.move-left{
+  animation: 3s slide-left;
+}
+
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slide-left {
+  from {
+    margin-right: -100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-right: 0%;
+    width: 100%;
+  }
+}
+
+.shake:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+/* chat box */
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #292929;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 200px;
+}
+
+/* The popup chat - hidden by default */
+* {box-sizing: border-box;}
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.column {
+  overflow: hidden;
+  transition-duration: 0.8s;
+  transition-property: transform;
+}
+.column:hover {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+}

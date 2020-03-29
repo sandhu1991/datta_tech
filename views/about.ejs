@@ -16,12 +16,12 @@
   </div>
   <div class="container-fluid bg-3 text-center">
     <div class="row">
-      <img src="/img/ottawa-canal-night.jpg" alt="DATTA TECH" class="about-mainimg">
+      <img src="/img/ottawa-canal-night.jpg" alt="DATTA TECH" class="about-mainimg" id="showMe">
     </div>
-    <div class="row" style="padding-top: 60px;">
+    <div class="row slide-right" style="padding-top: 60px;" id="whoDiv">
       <h2 style="color: #8c4b4a; text-align: center;"> <b>Who We Are</b></h2>
     </div>
-    <div class="row">
+    <div class="row" id="showMe">
       <h3 class="about-text"
         style="text-align: center; padding-right: 200px; padding-left: 200px; text-align: justify;">We are in business
         providing professional Managed IT services worldwide. We like spreading the benefits of MSP to everybody who
@@ -32,16 +32,16 @@
     </div>
 
     <div class="row">
-      <div class="row">
+      <div class="row slide-left" id="valueDiv">
         <h2 style="text-align: center; margin-bottom: 35px; padding-top: 80px;"> <b style="color: #8c4b4a;">Our
             Values</b></h2>
       </div>
-      <div class="row">
+      <div class="row" id="showMe">
         <h4 style="text-align: center; margin-bottom: 35px; padding-left: 200px; padding-right: 200px;">
           <b>Datta Tech has 5 values that govern all relationships among employees, customers,
             suppliers and partners. Values conveyed and reinforced on a daily basis.</b></h4>
       </div>
-      <div class="row">
+      <div class="row shake">
         <div class="col-sm-1">
         </div>
         <div class="col-sm-2">
@@ -90,7 +90,7 @@
       </div>
     </div>
 
-    <div class="row" style="padding-top: 60px;">
+    <div class="row" style="padding-top: 60px;" id="descDiv">
       <h2 style="text-align: center; color: #8c4b4a;"> <b>We Make IT Look Easy </b></h2>
       <h3 class="about-text" style="padding-left: 50px; padding-right: 50px;">The job of the technology professional is
         hard. Technology is pervasive, complex and always changing. End users can be
@@ -128,7 +128,7 @@
         technology professionals to do their jobs more effectively and efficiently.</h3>
     </div>
 
-    <div class="row" style="padding-top: 40px;">
+    <div class="row slide-left" style="padding-top: 40px; display: none;" id="teamDiv">
       <h2 style="text-align: center; color: #8c4b4a;"> <b>Our Team</b></h2>
       <div class="row" style="padding-left: 15px; margin-right: 10px; ">
         <div class="col-xs-3" style="padding: 35px;">
@@ -220,11 +220,6 @@
     <div class="col-xs-2">
     </div>
   </div>
-    <!-- <div class="row" style="padding: 5px;">
-        <div class="col-sm-12" style="background-color: #8c4b4a; height: 200px;">
-          <h3 style="padding: 60px; text-align: center;"> <a  href="https://www.facebook.com/Datta-Tech-Consulting-108951983889689"  target="_blank" style="color: white;">Follow Us</a> </h3>
-        </div>
-      </div> -->
   </div>
 
 
@@ -234,3 +229,12 @@
 <% include partials/script %>
 
 </html>
+
+<script>
+  var waypoint = new Waypoint({
+  element: document.getElementById('descDiv'),
+  handler: function(direction) {
+    document.getElementById('teamDiv').style.display='block';
+  }
+})
+</script>
