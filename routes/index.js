@@ -24,6 +24,10 @@ router.get('/services', function(req, res, next) {
   res.render('services', {page:'IT Services', menuId:'services'});
 });
 
+router.get('/mobile-testing', function(req, res, next) {
+  res.render('mobileTesting', {page:'Mobile Testing', menuId:'Mobile Testing'});
+});
+
 router.get('/contact', function(req, res, next) {
   res.render('contact', {page:'Contact Us', menuId:'contact'});
 });
