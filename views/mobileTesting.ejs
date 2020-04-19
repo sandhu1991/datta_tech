@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <% include partials/head %> 
+</head>
+<body>
+<% include partials/menu %>
+
+<div id="main-div">
+
+<div class="row" style="height: 45px;">
+  <ul class="breadcrumb">
+    <li style="color: black;">You are here:</li>
+    <li><a href="/">Home</a></li>
+   <li><a href="/services">Product</a></li>
+   <li><a href="/mobile-testing">Mobile Testing</a></li>
+  </ul>
+</div>
+
+
+<div class="row">
+  <img src="/img/ottawa-canal-night.jpg" alt="DATTA TECH" class="about-mainimg" id="showMe">
+</div>
+
+<div class="row" style="margin-right: 0px;" id="showMe">
+  <h2 style="text-align: center; padding-top: 40px; color: #8c3232;">Datta Tech Consulting
+     Mobile Device Testing</h2>
+  <p class="main-page-text">We strive to make mobile testing feasible
+     to small and medium size mobile development teams. Given our current
+      situation, we are restlessly exploring all available opportunities 
+      to accelerate and promote the new work culture of having to work remote.
+       If you are mobile developer or a development team that is used to 
+       rely on physical infrastructure and common workplace for all daily
+        activities and is now unable to proceed further due to the given 
+        pandemic circumstances then you are in the right place. </p>
+</div>
+
+<div class="flip-card" style="padding-top: 60px;">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h3 style="padding-top: 40px;">What we’re doing to help:</h3>
+      <p class="flip-text" style="padding-top: 40px;">Our commitment to the testing community is
+         as strong as ever and we stand ready to help organizations most 
+         in need. To that end, if you find that your company is negatively
+          impacted by not having access to devices, we’re offering you and your team</p>
+
+    </div>
+    <div class="flip-card-back">
+      <li style="padding-top:80px; font-size: 20px;">Local mobile device slots to connect your existing on-premises devices, completely free of charge, for 90 days </li>
+      <li style="padding:20px; font-size: 20px;">An unlimited number of users to access your local devices worldwide</li>
+      <li style="padding:20px; font-size: 20px;">No cost, No contract, No catch</li>
+    </div>
+  </div>
+</div>
+
+<div class="row" style="margin-right: 0px;" id="showMe">
+  <p class="main-page-text">We understand business operations are going through
+     unforeseen circumstances and we hope our initiative helps make a tiny difference
+      to your lives. Contact us to learn more about this offer. </p>
+    <p class="main-page-text">Datta Tech Consulting requires the contact information 
+      you provide to us to contact you about our products and services. You may
+       unsubscribe from these communications at anytime. For information on how
+        to unsubscribe, as well as our privacy practices and commitment to 
+        protecting your privacy, check out our Privacy Policy. </p>
+</div>
+
+
+
+<div class="row" style="background-color: aliceblue; padding: 40px;" id='contDiv'>
+  <div class="col-xs-7">
+    <div class="row" style="padding: 40px;">
+      <h1 style="text-align: center; color:#8c4b4a;">Newsletter</h1>
+      <h4 style="text-align: center;">Stay up to date with our latest news and product</h4>
+    </div>
+    <div class="row">
+      <div class="col-xs-2"></div>
+      <div class="col-xs-6">
+        <input type="text" placeholder="Insert Your Email">
+      </div>
+      <div class="col-xs-2" style="padding-top: 6px; padding-left: 0px;">
+        <input type="submit" value="Subscribe" style="background:#8c4b4a">
+      </div>
+    </div>
+    <div class="row" style="font-size: 18px; padding-bottom: 30px;">
+      <div class="col-xs-2"></div>
+      <div class="col-xs-6">
+        <p style="text-align: end;">Your email is safe with us, we don't spam</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-4">
+    <img src="/img/getintouch.png" style="height: 280px; width: 100%;">
+  </div>
+</div>
+</div>
+
+<button class="open-button" onclick="openForm()">Reach Us Out</button>
+<div class="chat-popup" id="myForm" style="background-color: #292929; margin-left: 300px; margin-right: 300px; margin-bottom: 100px;">
+  <form action="/submit" method="POST" style="padding: 35px;">
+    <div class="col-sm-12">
+      <div class="col-sm-6 first">
+        <label for="fname" style="color: white;">First Name</label>
+        <input type="text" id="firstname" name="firstname" placeholder="Your name..">
+      </div>
+      <div class="col-sm-6 first">
+        <label for="lname" style="color: white;">Last Name</label>
+        <input type="text" id="lastname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="col-sm-12">
+      <div class="col-sm-6 first">
+        <label for="fname"  style="color: white;">Email</label>
+        <input type="text" id="email" name="email" placeholder="Your email..">
+      </div>
+      <div class="col-sm-6 first">
+        <label for="lname" style="color: white;">Phone</label>
+        <input type="text" id="phone" name="phone" placeholder="Your phone..">
+      </div>
+    </div>
+    <div class="col-sm-12">
+      <label for="subject"style="color: white;" >Subject</label>
+      <input type="text" id="subject" name="subject" Value="Help Regarding Mobile Testing" disabled>
+    </div>
+    <div class="col-sm-12">
+      <label for="subject" style="color: white;">Message</label>
+      <textarea id="text" name="text" placeholder="Write something.." style="height:200px"></textarea>
+    </div>
+  </form>
+  <div class="row" style="padding-bottom: 20px; margin-left: 350px;">
+    <input type="submit" value="SUBMIT">
+    <input type="submit" value="Close" onclick="closeForm()">
+  </div> 
+</div>
+</body>
+<% include partials/footer %>
+<% include partials/script %>
+</html>
+
+<script>
+  function openForm() {
+  document.getElementById("myForm").style.display = "block";
+  document.getElementById('main-div').style.opacity='0.3'
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+  document.getElementById('main-div').style.opacity='1'
+}
+</script>
